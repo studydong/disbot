@@ -174,7 +174,7 @@ client.on('message', (message) => {
       .setAuthor('Hazard', img)
       .setThumbnail(img2)
       .addField('\u200b', '\u200b')
-      .addField("\:sparkling_heart:\플레이어 ESP\n",'\`-반동 제어(무반동)\n-자유시점 카메라\n-동물 ESP\n-바이패스 우회\n-프레임 드랍 제거\`')
+      .addField("\:sparkling_heart:\기능",'\`-플레이어 ESP\n-반동 제어(무반동)\n-자유시점 카메라\n-동물 ESP\n-바이패스 우회\n-프레임 드랍 제거\`')
 
       message.channel.send(embed)
   }
