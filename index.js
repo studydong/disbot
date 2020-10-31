@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.env.token;
+const token = 'NzcxNDAyNDE4NjU5MjYyNTA0.X5rmfA.sBtMbixZH0M_4Iljd_cfZ6UiI3w';
 const byeChannelName = "goodbye-friend";
 const welcomeChannelComment = "어서오세요.^-^";
 const byeChannelComment = "안녕히가세요.";
@@ -150,16 +150,16 @@ client.on('message', (message) => {
     let img = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
     let img2 = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
     let embed = new Discord.MessageEmbed()
-      .setColor('#58FAF4')
-      .setTitle('BSA buy Click!')
+      .setColor('#F7FE2E')
+      .setTitle('Paypal / 카드결제')
       .setURL('https://sellix.io/doomsdays/category/5f8879ab06b4f')
       .setAuthor('Hazard', img)
       .setThumbnail(img2)
       .addField('\u200b', '\u200b')
-      .addField('KR Price', '1일 :5,500 KR\n 7일 : 15,000 KR\n 30일 : 30,000 KR\n 무제한 : Hazard DM')
+      .addField('\:credit_card:\스푸퍼 X KR Price', '1일 :5,500 KR\n 7일 : 15,000 KR\n 30일 : 30,000 KR')
       .addField('\u200b', '\u200b')
-      .addField('USD Price', 'One Day : 4.85 USD\n One Week : 13.24 USD\n One Month : 26.48 USD\n Lifetime : HaZard DM')
-
+      .addField('\:credit_card:\스푸퍼 O KR Price', '1일 :7,500 KR\n 7일 : 20,000 KR\n 30일 : 40,000 KR')
+      
     message.channel.send(embed)
   } 
 
@@ -168,21 +168,27 @@ client.on('message', (message) => {
     let img = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
     let img2 = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
     let embed = new Discord.MessageEmbed()
-      .setColor('#58FAF4')
+      .setColor('#F7FE2E')
       .setTitle('Product Name : rad')
       .setDescription('Support OS : Windows 10 all version\n Support CPU : Intel, AMD\n Support Screen : Windowed')
       .setAuthor('Hazard', img)
       .setThumbnail(img2)
       .addField('\u200b', '\u200b')
-      .addField('Functional(기능)',`-No Recoil
-      -Debug Camera
-      -Player ESP
-      -Animal ESP
-      -Relialble Bypass
-      -High optimization`)
+      .addField("\:sparkling_heart:\플레이어 ESP\n",'\`-반동 제어(무반동)\n-자유시점 카메라\n-동물 ESP\n-바이패스 우회\n-프레임 드랍 제거\`')
 
       message.channel.send(embed)
   }
+
+  if(message.content == 'rad com') {
+    if(checkPermission(message)) return
+    let img = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
+    let embed = new Discord.MessageEmbed()
+      .setColor('#F7FE2E')
+      .setAuthor('Hazard', img)
+      .setDescription('\`-가성비 ESP 치트\n-ID/PW 로그인 인증\n-HWID 인증\n-USB 드라이브 필요\`')
+
+    message.channel.send(embed)
+  } 
 
   if(message.content == 'account') {
     if(checkPermission(message)) return
@@ -204,13 +210,13 @@ client.on('message', (message) => {
     let img = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
     let img2 = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
     let embed = new Discord.MessageEmbed()
-      .setColor('#2AFF31')
+      .setColor('#01FBFB')
       .setTitle('Product : Luna Spoofer')
       .setDescription('Support OS : Windows 7, Windows 10 (all version)\n Support CPU : Intel, AMD\n EAC/BE Bypass')
       .setAuthor('Hazard', img)
       .setThumbnail(img2)
       .addField('\u200b', '\u200b')
-      .addField("기능\n",'-하드디스크 스푸핑\n -CPU 스푸핑\n -메인보드 스푸핑\n -폴더 클리너\n -1초 스푸핑\n')
+      .addField("\:sparkling_heart:\기능\n",'\`-하드디스크 스푸핑\n -CPU 스푸핑\n -메인보드 스푸핑\n -폴더 클리너\n -1초 스푸핑\n\`')
 
     message.channel.send(embed)
   } 
@@ -220,14 +226,24 @@ client.on('message', (message) => {
     let img = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
     let img2 = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
     let embed = new Discord.MessageEmbed()
-      .setColor('#2AFF31')
-      .setTitle('luna buy Click!')
+      .setColor('#01FBFB')
+      .setTitle('Paypal / 카드결제')
       .setURL('https://sellix.io/doomsdays/category/5f93eddb5ede6')
       .setAuthor('Hazard', img)
       .setThumbnail(img2)
       .addField('\u200b', '\u200b')
-      .addField('KR Price', '30일 : 30,000 KR')
-      .addField('USD Price', 'One Month : 26.58 USD')
+      .addField('\:credit_card:\KR Price', '30일 : 30,000 KR')
+
+    message.channel.send(embed)
+  } 
+
+  if(message.content == 'luna com') {
+    if(checkPermission(message)) return
+    let img = 'https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif';
+    let embed = new Discord.MessageEmbed()
+      .setColor('#01FBFB')
+      .setAuthor('Hazard', img)
+      .setDescription('\`-런처 자동 업데이트\n-ID/PW 로그인 인증\n-HWID 하드 인증\n-출시 이후 감지된 적 없음\n-정기적인 업데이트를 위해 1달의 기간만 판매\`')
 
     message.channel.send(embed)
   } 
